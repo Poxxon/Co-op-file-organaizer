@@ -20,3 +20,9 @@ for file_name in files:
         # Build the full file path
         source_file = os.path.join(source_dir, file_name)
         dest_file = os.path.join(dest_dir, file_name)
+
+        # Move the file to dest directory
+        shutil.move(source_file, dest_file)
+        print(f"Moved: {file_name} to {dest_file}.")
+
+print("Organization complete!")
