@@ -17,7 +17,7 @@ for file_name in files:
 
     # Check if file ends with .pdf and contains 'intern', 'coop' or 'winter'
     if file_name.endswith('.pdf') and any(keyword in file_name.lower() for keyword in 
-    ['intern', 'coop', 'co-op', 'winter']):
+    ['intern', 'coop', 'co-op', 'winter', 'Analyst', 'Software', 'Junior']):
         
         # Build the full file path
         source_file = os.path.join(source_dir, file_name)
